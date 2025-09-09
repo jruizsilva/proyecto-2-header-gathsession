@@ -1,0 +1,20 @@
+.hero {
+  max-width: 49rem;
+}
+
+.hero__title {
+  font-size: var(--fs-maintitle);
+  font-weight: var(--fw-maintitle);
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.hero__subtitle {
+  font-size: var(--fs-mainsubtitle);
+  font-weight: var(--fw-mainsubtitle);
+  margin-bottom: 2rem;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 2rem;
+}
