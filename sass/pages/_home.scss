@@ -1,3 +1,16 @@
+.main {
+  & .faces-image {
+    position: fixed;
+    right: 6%;
+    bottom: 6%;
+  }
+  & .ellipses-image {
+    position: fixed;
+    right: -2%;
+    bottom: -5%;
+  }
+}
+
 .hero {
   max-width: 49rem;
 }
@@ -66,4 +79,11 @@
 }
 .hero__card-icon {
   max-width: 100%;
+}
+
+.container__bg-images {
+  height: 100%;
+  width: 781px;
+  background-image: url("/images.png");
+  background-repeat: no-repeat;
 }
