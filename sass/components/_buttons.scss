@@ -1,21 +1,33 @@
 @use "../abstracts" as *;
-
-.button-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
+@use "sass:color";
 
 .button {
-  @extend %btn;
-  padding: 0.75em 1.5em;
-  color: var(--clr-text);
+  background-color: var(--clr-rose);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 3.125rem;
   text-decoration: none;
-  background-color: var(--clr-primary);
-  border: 1px solid var(--clr-secondary);
-  border-radius: 0.5em;
 
   &:hover {
-    background-color: var(--clr-secondary);
+    background-color: color.scale($color: #db2a6b, $lightness: 10%);
+  }
+}
+
+.link {
+  color: var(--clr-text);
+  &:hover {
+    color: white;
+  }
+}
+.link.active {
+  color: white;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 8px;
+    width: 2rem;
+    height: 0.25rem;
+    background-color: var(--clr-rose);
   }
 }
