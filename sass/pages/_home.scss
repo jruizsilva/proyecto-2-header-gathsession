@@ -17,4 +17,53 @@
 .hero__buttons {
   display: flex;
   gap: 2rem;
+  margin-bottom: 9rem;
+}
+
+.hero__card-list {
+  display: flex;
+  gap: 48px;
+}
+.hero__card-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  &:nth-child(1) {
+    .hero__card-title {
+      max-width: 110px;
+    }
+  }
+
+  &:nth-child(2) {
+    .hero__card-title {
+      max-width: 60px;
+    }
+  }
+
+  &:nth-child(3) {
+    .hero__card-title {
+      max-width: 110px;
+    }
+  }
+}
+
+.hero__card-title {
+  font-size: var(--fs--text);
+  font-weight: var(--fw-semibold);
+  color: white;
+}
+
+.hero__card-icon-container {
+  background-color: var(--clr-bgwhite15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 16px;
+}
+.hero__card-icon {
+  max-width: 100%;
 }
