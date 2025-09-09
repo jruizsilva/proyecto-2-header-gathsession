@@ -1,10 +1,10 @@
 body {
   font-family: var(--ff-primary);
-  font-size: var(--fs-400);
 
   background-color: var(--clr-background);
   color: var(--clr-text);
-  font-weight: 400;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-text);
 }
 
 h1,

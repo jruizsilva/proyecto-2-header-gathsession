@@ -7,42 +7,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/sass/style.scss" />
     <title>Sass Template - v2.0</title>
   </head>
   <body>
-    <main class="container">
-      <div class="logos">
-        <img src="/vite.svg" alt="Vite logo" />
-        <img src="/sass.svg" alt="Sass logo" />
+    <header class="header">
+      <div class="container">
+        <h2 class="logo">
+          Gath<span class="text-highlight-white">Session</span>.
+        </h2>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <h1 class="main-title">Vite + Sass</h1>
-      <p>
-        A starter <b class="text-highlight">Sass</b> template for your projects.
-      </p>
-      <div class="button-group">
-        <a
-          class="button"
-          href="https://github.com/dostonnabotov/sass-template/tree/main/sass"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/github.svg" alt="" />
-          <span>Download here</span>
-        </a>
-        <a
-          class="button"
-          href="https://github.com/dostonnabotov/sass-template"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/star.svg" alt="" />
-          <span>Star this project</span>
-        </a>
-      </div>
-    </main>
+    </header>
   </body>
 </html>

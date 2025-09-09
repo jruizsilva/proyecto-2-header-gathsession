@@ -1,0 +1,19 @@
+.header {
+  .logo {
+    color: var(--clr-rose);
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px;
+  }
+  .nav__list {
+    display: flex;
+    gap: 48px;
+  }
+  .nav__link {
+    text-decoration: none;
+    color: var(--clr-text);
+    font-weight: var(--fw-regular);
+  }
+}
