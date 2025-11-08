@@ -12,13 +12,30 @@
   padding-top: 46px;
   padding-bottom: 46px;
   padding-inline: 2rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding-top: 24px;
+    gap: 24px;
+  }
 }
 .nav__list {
   display: flex;
   gap: 48px;
+
+  @media (max-width: 800px) {
+    gap: 24px;
+  }
+  @media (max-width: 800px) {
+    gap: 16px;
+  }
 }
 .nav__link {
   text-decoration: none;
   color: var(--clr-text);
   font-weight: var(--fw-regular);
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
 }
