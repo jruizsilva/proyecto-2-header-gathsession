@@ -1,7 +1,8 @@
 .wrapper {
   position: relative;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   @media (max-width: 810px) {
     overflow-y: visible;
@@ -105,6 +106,11 @@
   display: flex;
   gap: 2rem;
   margin-bottom: 9rem;
+
+  @media (max-width: 500px) {
+    gap: 1rem;
+    justify-content: space-between;
+  }
 }
 
 .hero__card-list {
