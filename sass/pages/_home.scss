@@ -1,14 +1,57 @@
+body {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("/ellipses.svg");
+    position: absolute;
+    top: 263px;
+    right: -151px;
+    width: 1102px;
+    height: 1043px;
+    z-index: -1;
+
+    @media (max-width: 1700px) {
+      right: -136px;
+    }
+    @media (max-width: 1600px) {
+      right: -340px;
+    }
+    @media (max-width: 1330px) {
+      right: -520px;
+    }
+  }
+
+  &::after {
+    content: "";
+    background-image: url("/faces.png");
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 120px;
+    right: 80px;
+    width: 784px;
+    height: 781px;
+    z-index: -1;
+
+    @media (max-width: 1700px) {
+      right: 16px;
+    }
+    @media (max-width: 1600px) {
+      right: -240px;
+    }
+    @media (max-width: 1330px) {
+      right: -520px;
+    }
+    @media (max-width: 1030px) {
+      right: -520px;
+      opacity: 0.25;
+    }
+  }
+}
+
 .main {
-  & .faces-image {
-    position: fixed;
-    right: 6%;
-    bottom: 6%;
-  }
-  & .ellipses-image {
-    position: fixed;
-    right: -2%;
-    bottom: -5%;
-  }
+  padding-inline: 2rem;
 }
 
 .hero {
